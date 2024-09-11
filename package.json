@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "start": "nodemon src/index.js",
+    "migrate": "sequelize db:migrate"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
