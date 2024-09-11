@@ -10,7 +10,7 @@ module.exports = {
     port: process.env.DB_PORT,
   },
   production: {
-    use_env_variable: 'Db_URL',
+    use_env_variable: 'DB_URL',
     dialect: 'postgres',
   }
 };
