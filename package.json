@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "nodemon src/index.js",
-    "migrate": "sequelize db:migrate"
+    "migrate": "sequelize db:migrate --config src/config/config.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
