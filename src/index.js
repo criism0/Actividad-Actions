@@ -10,6 +10,6 @@ app.use(bodyParser());
 
 app.use(router.routes()).use(router.allowedMethods());
 
-app.listen(3000, () => {
-  console.log('Servidor corriendo en puerto 3000');
+app.listen(5432, () => {
+  console.log('Servidor corriendo en puerto 5432');
 });
