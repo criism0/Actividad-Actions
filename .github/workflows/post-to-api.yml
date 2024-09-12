@@ -1,0 +1,18 @@
+name: Post to API on Push
+
+on:
+  push:
+
+jobs:
+  post_to_api:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Send POST request to API
+        run: |
+          curl -X POST https://actividad-actions.onrender.com/alumnos \
+          -H "Content-Type: application/json" \
+          -d '{"nombre": "Juan", "apellido": "Perez", "pelicula_favorita": "Matrix"}'
