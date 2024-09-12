@@ -13,6 +13,6 @@ jobs:
 
       - name: Send POST request to API
         run: |
-          curl -X POST https://actividad-actions.onrender.com/alumnos \
+          curl -X POST https://api-activdad-actions.onrender.com/alumnos \
           -H "Content-Type: application/json" \
-          -d '{"nombre": "Juan", "apellido": "Perez", "pelicula_favorita": "Matrix"}'
+          -d '{"nombre": "Cristóbal", "apellido": "Moreno", "pelicula_favorita": "Avengers"}'
